@@ -1,0 +1,52 @@
+
+.water-icon-large {
+    font-size: 5rem;
+    color: #0984e3;
+}
+
+.water-controls {
+    display: flex;
+    gap: 0.6rem;
+    justify-content: center;
+}
+
+.progress-container {
+    background-color: #dfe6e9;
+    border-radius: 1.8rem;
+    height: 5vh;
+    overflow: hidden;
+    width: 100%;
+}
+
+.progress-bar {
+    height: 100%;
+    width: 0%;
+    background: #0984e3;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-weight: bold;
+    transition: width 0.5s ease;
+}
+
+
+
+button.btn-water-add {
+    width: auto; 
+    background-color: #0984e3; 
+}
+
+button.btn-water-reset {
+    width: auto;
+    background-color: #d63031; 
+}
+
+
+button.btn-water-add:hover {
+    background-color: #076ebc;
+}
+
+button.btn-water-reset:hover {
+    background-color: #b71c1c;
+}

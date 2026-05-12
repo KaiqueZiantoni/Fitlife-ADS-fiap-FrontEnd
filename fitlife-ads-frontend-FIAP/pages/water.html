@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/water.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+    />
+    <title>FitLife | Água</title>
+  </head>
+  <body>
+    <nav>
+      <a href="../index.html" class="logo">
+        <i class="fas fa-heartbeat"></i>
+        <p>FitLife</p>
+      </a>
+
+      <ul class="nav-links">
+        <li><a href="../index.html" class="nav-link">Home</a></li>
+        <li><a href="imc.html" class="nav-link">IMC</a></li>
+        <li><a href="tmb.html" class="nav-link">TMB</a></li>
+        <li><a href="water.html" class="nav-link active">Água</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <section class="tool-container">
+        <header>
+          <h2><i class="fas fa-tint"></i> Hidratação</h2>
+          <p>Meta: 2500ml</p>
+        </header>
+
+        <i class="fas fa-glass-water water-icon-large"></i>
+
+        <div class="water-controls">
+          <button class="action-btn btn-water-add" onclick="addWater(250)">
+            + 250ml
+          </button>
+          <button class="action-btn btn-water-reset" onclick="resetWater()">
+            Zerar
+          </button>
+        </div>
+
+        <div class="progress-container">
+          <div class="progress-bar" id="water-bar">0%</div>
+        </div>
+
+        <p>Total: <strong id="water-total">0</strong> ml</p>
+
+        <a href="../index.html" class="action-btn btn-back">Voltar</a>
+      </section>
+    </main>
+
+    <script src="../js/water.js"></script>
+  </body>
+</html>
