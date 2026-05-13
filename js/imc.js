@@ -1,0 +1,14 @@
+function calculateIMC(){
+
+    const weightInput = document.getElementById('weight');
+    const heightInput = document.getElementById('height');
+    const resultBox = document.getElementById('result');
+    const valueText= document.getElementById('imc-value');
+    const descText = document.getElementById('imc-desc');
+    
+    const weight = (weightInput.value);
+    const height = (heightInput.value);
+
+    const imc = weight / (height * height);
+    console.log(imc);
+}
